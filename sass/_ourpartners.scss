@@ -1,0 +1,32 @@
+.ourpartners {
+  padding: 64px 0px 106px 0px;
+  .container {
+    margin: 0 auto;
+  }
+  &-container {
+    display: flex;
+    flex-direction: column;
+    gap: 55px;
+    .menu {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+  &-title {
+    h2 {
+      max-width: 450px;
+      font-size: 48px;
+      line-height: calc(60 / 48);
+      letter-spacing: -4px;
+    }
+  }
+}
+@media screen and (max-width: 767px) {
+  .ourpartners {
+    padding: 40px 0px 0px 0px;
+    &-container {
+      gap: 15px;
+    }
+  }
+}

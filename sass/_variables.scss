@@ -1,0 +1,12 @@
+@font-face {
+  font-family: titleSmall;
+  src: url("../fonts/FontsFree-Net-NewYorkExtraLargeMedium.ttf");
+}
+@font-face {
+  font-family: titleBig;
+  src: url("../fonts/FontsFree-Net-NewYorkExtraLargeMedium.ttf");
+  font-weight: 900;
+}
+$bigSize: 120px;
+$smallSize: 48px;
+$color-primary: rgba(253, 102, 94, 1);

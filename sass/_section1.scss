@@ -1,0 +1,132 @@
+.section1 {
+  padding: 48px 0px;
+  .container {
+    margin: 0 auto;
+  }
+  &-container {
+    display: flex;
+    flex-direction: column;
+    gap: 42px;
+  }
+  &-title h2 {
+    font-family: titleBig;
+    font-size: 120px;
+    line-height: 1;
+    letter-spacing: -4px;
+    max-width: 870px;
+    span {
+      color: $color-primary;
+    }
+  }
+  &-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 55px;
+    &-text {
+      width: 100%;
+      max-width: 290px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 48px;
+      span {
+        line-height: calc(25.6 / 16);
+        letter-spacing: -1%;
+      }
+      .button {
+        span {
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1023px) {
+  .section1 {
+    .container {
+    }
+    &-container {
+    }
+    &-title {
+      h2 {
+        font-size: 100px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 905px) {
+  .section1 {
+    .container {
+    }
+    &-container {
+      gap: 15px;
+    }
+    &-title {
+      h2 {
+        font-size: 80px;
+      }
+    }
+    &-content {
+      flex-direction: column-reverse;
+      gap: 15px;
+      &-text {
+        max-width: 100%;
+        gap: 15px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 859px) {
+  .section1 {
+    .container {
+    }
+    &-container {
+    }
+    &-title {
+      h2 {
+        font-size: 80px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 781px) {
+  .section1 {
+    .container {
+    }
+    &-container {
+    }
+    &-title {
+      h2 {
+        font-size: 65px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 688px) {
+  .section1 {
+    .container {
+    }
+    &-container {
+    }
+    &-title {
+      h2 {
+        font-size: 55px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 626px) {
+  .section1 {
+    .container {
+    }
+    &-container {
+    }
+    &-title {
+      h2 {
+        font-size: 50px;
+      }
+    }
+  }
+}

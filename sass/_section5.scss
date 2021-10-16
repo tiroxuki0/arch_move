@@ -1,0 +1,55 @@
+.section5 {
+  padding: 65px 0px;
+  .container {
+    margin: 0 auto;
+  }
+  &-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 120px;
+  }
+  &-image {
+  }
+  &-title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 64px;
+    h2 {
+      max-width: 450px;
+      font-size: 48px;
+      line-height: calc(60 / 48);
+      letter-spacing: -4px;
+      span {
+        color: $color-primary;
+      }
+    }
+    .button {
+      span {
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+.section5-title {
+}
+.button {
+}
+@media screen and (max-width: 767px) {
+  .section5 {
+    padding: 0px;
+    .container {
+    }
+    &-container {
+      gap: 10px;
+    }
+    &-title {
+      h2 {
+        font-size: 40px;
+      }
+      gap: 15px;
+    }
+  }
+}
