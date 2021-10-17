@@ -10,31 +10,12 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
 </head>
 <body>
     <div class="wrapper">
         <header class="header">
             <div class="container">
-                <div class="bar">
-                    <label for="bar-check" class="bar-label"><i class="fas fa-bars"></i></label>
-                    <input type="checkbox" name="" id="bar-check" class="bar-input">
-                    <div class="bar-menu">
-                        <ul>
-                            <li class="item">
-                                <a href="#" class="link">Design Gallery</a>
-                            </li>
-                            <li class="item">
-                                <a href="#" class="link">List of Architect</a>
-                            </li>
-                            <li class="item">
-                                <a href="#" class="link">Articles</a>
-                            </li>
-                            <li class="item">
-                                <a href="#" class="link">How it Works</a>
-                            </li>
-                        </ul>
-                    </div>
-            </div>
                 <div class="header-container">
                     <div class="header-left">
                         <div class="header-logo">
@@ -88,30 +69,32 @@
                     <div class="section2-title">
                         <h2>Build professional valuable room for you</h2>
                     </div>
-                    <div class="section2-list">
-                        <ul class="menu">
-                          <li class="menu-item">
+                    <div class="swiper section2-list">
+                        <div class="swiper-wrapper menu">
+                          <div class="swiper-slide menu-item">
                             <a href="#" class="menu-link">
                                 <img src="./imgs/section2.1.png" alt="">
                             </a>
-                          </li>
-                          <li class="menu-item">
+                          </div>
+                          <div class="swiper-slide menu-item">
                             <a href="#" class="menu-link">
                                 <img src="./imgs/section2.2.png" alt="">
                             </a>
-                          </li>
-                          <li class="menu-item">
+                          </div>
+                          <div class="swiper-slide menu-item">
                             <a href="#" class="menu-link">
                                 <img src="./imgs/section2.3.png" alt="">
                             </a>
-                          </li>
-                          <li class="menu-item">
+                          </div>
+                          <div class="swiper-slide menu-item">
                             <a href="#" class="menu-link">
                                 <img src="./imgs/section2.4.png" alt="">
                             </a>
-                          </li>
-                        </ul>
-                        
+                          </div>
+                        </div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-pagination"></div>
                     </div>
                 </div>
             </div>
@@ -250,6 +233,26 @@
             </div>
         </footer>
     </div>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".section2-list", {
+          spaceBetween: 30,
+          centeredSlides: true,
+          autoplay: {
+            delay: 5500,
+            disableOnInteraction: false,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      </script>
 </body>
 </html>
 

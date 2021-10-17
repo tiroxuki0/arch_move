@@ -2,6 +2,7 @@
   padding: 64px 0px;
   .container {
     margin: 0 auto;
+    position: relative;
   }
   &-container {
     display: flex;
@@ -23,16 +24,17 @@
   }
   &-list {
     .menu {
-      margin-right: -65px;
+      /* margin-right: -65px;
       display: flex;
       justify-content: center;
       align-items: center;
-      gap: 40px;
+      gap: 40px; */
       &-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         &-link {
           a {
-            width: 305px;
-            height: 430px;
           }
         }
       }

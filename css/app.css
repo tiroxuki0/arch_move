@@ -338,6 +338,7 @@ body {
 }
 .section2 .container {
   margin: 0 auto;
+  position: relative;
 }
 .section2-container {
   display: flex;
@@ -358,17 +359,17 @@ body {
   letter-spacing: -4px;
 }
 .section2-list .menu {
-  margin-right: -65px;
+  /* margin-right: -65px;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 40px;
+  gap: 40px; */
 }
-.section2-list .menu-item-link a {
-  width: 305px;
-  height: 430px;
+.section2-list .menu-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
 @media screen and (max-width: 905px) {
   .section2 {
     padding: 10px 0px;
