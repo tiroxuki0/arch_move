@@ -70,31 +70,49 @@
                         <h2>Build professional valuable room for you</h2>
                     </div>
                     <div class="swiper section2-list">
-                        <div class="swiper-wrapper menu">
-                          <div class="swiper-slide menu-item">
+                        <ul class="swiper-wrapper menu">
+                          <li class="swiper-slide menu-item">
                             <a href="#" class="menu-link">
                                 <img src="./imgs/section2.1.png" alt="">
                             </a>
-                          </div>
-                          <div class="swiper-slide menu-item">
+                          </li>
+                          <li class="swiper-slide menu-item">
                             <a href="#" class="menu-link">
                                 <img src="./imgs/section2.2.png" alt="">
                             </a>
-                          </div>
-                          <div class="swiper-slide menu-item">
+                          </li>
+                          <li class="swiper-slide menu-item">
                             <a href="#" class="menu-link">
                                 <img src="./imgs/section2.3.png" alt="">
                             </a>
-                          </div>
-                          <div class="swiper-slide menu-item">
+                          </li>
+                          <li class="swiper-slide menu-item">
                             <a href="#" class="menu-link">
                                 <img src="./imgs/section2.4.png" alt="">
                             </a>
-                          </div>
-                        </div>
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div>
-                        <div class="swiper-pagination"></div>
+                          </li>
+                          <li class="swiper-slide menu-item">
+                            <a href="#" class="menu-link">
+                                <img src="./imgs/section2.4.png" alt="">
+                            </a>
+                          </li>
+                          <li class="swiper-slide menu-item">
+                            <a href="#" class="menu-link">
+                                <img src="./imgs/section2.4.png" alt="">
+                            </a>
+                          </li>
+                          <li class="swiper-slide menu-item">
+                            <a href="#" class="menu-link">
+                                <img src="./imgs/section2.4.png" alt="">
+                            </a>
+                          </li>
+                          <li class="swiper-slide menu-item">
+                            <a href="#" class="menu-link">
+                                <img src="./imgs/section2.4.png" alt="">
+                            </a>
+                          </li>
+                        </ul>
+                        <div class="swiper-pagination pagi"></div>
                     </div>
                 </div>
             </div>
@@ -237,21 +255,14 @@
 
     <script>
         var swiper = new Swiper(".section2-list", {
-          spaceBetween: 30,
-          centeredSlides: true,
-          autoplay: {
-            delay: 5500,
-            disableOnInteraction: false,
-          },
-          pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-          },
-          navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-          },
-        });
+        slidesPerView: 4,
+        spaceBetween: 30,
+        centeredSlides: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
       </script>
 </body>
 </html>

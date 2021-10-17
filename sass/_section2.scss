@@ -2,14 +2,12 @@
   padding: 64px 0px;
   .container {
     margin: 0 auto;
-    position: relative;
   }
   &-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
-    gap: 40px;
   }
   &-title {
     width: 100%;
@@ -23,22 +21,18 @@
     }
   }
   &-list {
+    width: 100%;
+    height: 25rem;
     .menu {
-      /* margin-right: -65px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 40px; */
       &-item {
         display: flex;
         justify-content: center;
         align-items: center;
-        &-link {
-          a {
-          }
-        }
       }
     }
+  }
+  .pagi {
+    position: absolute;
   }
 }
 @media screen and (max-width: 905px) {
