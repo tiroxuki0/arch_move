@@ -6,7 +6,7 @@ body {
   background-color: transparent;
 }
 .container {
-  width: calc(100% - 330px);
+  width: calc(100% - 200px);
   overflow: hidden;
 }
 .button {
@@ -20,8 +20,8 @@ body {
     text-transform: uppercase;
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1023px) {
   .container {
-    width: calc(100% - 100px);
+    width: calc(100% - 50px);
   }
 }

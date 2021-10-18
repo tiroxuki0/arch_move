@@ -1,15 +1,21 @@
 .section5 {
   padding: 65px 0px;
   .container {
+    height: 100%;
     margin: 0 auto;
   }
   &-container {
+    height: 100%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     gap: 120px;
   }
   &-image {
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
   }
   &-title {
     display: flex;
@@ -17,7 +23,6 @@
     align-items: flex-start;
     gap: 64px;
     h2 {
-      max-width: 450px;
       font-size: 48px;
       line-height: calc(60 / 48);
       letter-spacing: -4px;
@@ -32,11 +37,6 @@
     }
   }
 }
-
-.section5-title {
-}
-.button {
-}
 @media screen and (max-width: 767px) {
   .section5 {
     padding: 0px;
@@ -45,11 +45,24 @@
     &-container {
       gap: 10px;
     }
+    &-image {
+      img {
+        height: 25rem;
+      }
+    }
     &-title {
       h2 {
         font-size: 40px;
       }
       gap: 15px;
+    }
+  }
+}
+@media screen and (max-width: 767px) {
+  .section5 {
+    &-container {
+      flex-wrap: wrap;
+      justify-content: center;
     }
   }
 }

@@ -1,3 +1,10 @@
+window.onscroll = () =>{
+  if(window.scrollY > 100){
+    document.querySelector(".header").classList.add("active")
+  }else{
+    document.querySelector(".header").classList.remove("active")
+  }
+}
 /* form search */
 let searchButton = document.querySelector("#header-search")
 
@@ -8,6 +15,41 @@ document.querySelector("#header-search").addEventListener("click", function () {
 document.querySelector("#close").addEventListener("click", function () {
   document.querySelector("#search-form").classList.remove("active")
 })
+/* form sign in */
+
+document.querySelector("#sign-in").addEventListener("click", function () {
+  document.querySelector(".form-wrapper").classList.add("active")
+})
+
+window.addEventListener("load", function () {
+  let panelOne = document.querySelector(".form-panel.one").offsetHeight
+  let panelTwo = document.querySelector(".form-panel.two").scrollHeight
+
+  document.querySelector(".form-panel.two").addEventListener("click", function (e){
+    e.preventDefault()
+    document.querySelector(".form-toggle").classList.add("visible")
+    document.querySelector(".form-panel.one").classList.add("hidden")
+    document.querySelector(".form-panel.two").classList.add("active")
+    document.querySelector(".form").style.height = panelTwo + "px"
+  })
+  
+  document.querySelector(".form-toggle").addEventListener("click",function (e) {
+    e.preventDefault()
+    document.querySelector(".form-toggle").classList.remove("visible")
+    document.querySelector(".form-panel.one").classList.remove("hidden")
+    document.querySelector(".form-panel.two").classList.remove("active")
+    document.querySelector(".form").style.height = panelOne + "px"
+  })
+})
+
+document.getElementById("close-signin").addEventListener("click", function (){
+  document.querySelector(".form-wrapper").classList.remove("active")
+})
+/* document.getElementById("form-wrapper").addEventListener("click", function (e) {
+  if(e.target != document.querySelector(".form")) {
+    document.querySelector(".form-wrapper").classList.remove("active")
+  }  
+}) */
 
 /* section2-slider */
 var swiper = new Swiper(".section2-list", {
@@ -42,10 +84,8 @@ window.addEventListener("scroll",function () {
          document.querySelector(currentList).classList.add("center");
    }
 
-   if( top < offsetSec2 ){
+   if( top < offsetSec2 - 200 ){
         document.querySelector(currentTitle).classList.remove("center");
         document.querySelector(currentList).classList.remove("center");
    }
 })
-
-

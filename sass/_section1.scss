@@ -1,5 +1,5 @@
 .section1 {
-  padding: 10rem 0px 48px 0px;
+  padding: 7rem 0px 48px 0px;
   .container {
     margin: 0 auto;
   }
@@ -8,18 +8,20 @@
     flex-direction: column;
     gap: 42px;
   }
-  &-title h2 {
-    font-family: titleBig;
-    font-size: 120px;
-    line-height: 1;
-    letter-spacing: -4px;
-    max-width: 870px;
-    transform: translateX(-100%);
+  &-title {
+    h2 {
+      font-family: titleBig;
+      font-size: 120px;
+      line-height: 1;
+      letter-spacing: -4px;
+      transform: translateX(-100%);
+    }
     span {
       color: $color-primary;
     }
   }
   &-content {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -53,12 +55,8 @@
     transform: translateX(0);
   }
 }
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1029px) {
   .section1 {
-    .container {
-    }
-    &-container {
-    }
     &-title {
       h2 {
         font-size: 100px;
@@ -66,77 +64,23 @@
     }
   }
 }
-@media screen and (max-width: 905px) {
+@media screen and (max-width: 768px) {
   .section1 {
-    .container {
-    }
+    padding: 5rem 0px 48px 0px;
     &-container {
-      gap: 15px;
+      gap: 20px;
     }
     &-title {
       h2 {
-        font-size: 80px;
+        font-size: 60px;
       }
     }
     &-content {
-      flex-direction: column-reverse;
-      gap: 15px;
+      flex-wrap: wrap-reverse;
+      gap: 20px;
       &-text {
         max-width: 100%;
-        gap: 15px;
-      }
-    }
-  }
-}
-@media screen and (max-width: 859px) {
-  .section1 {
-    .container {
-    }
-    &-container {
-    }
-    &-title {
-      h2 {
-        font-size: 80px;
-      }
-    }
-  }
-}
-@media screen and (max-width: 781px) {
-  .section1 {
-    .container {
-    }
-    &-container {
-    }
-    &-title {
-      h2 {
-        font-size: 65px;
-      }
-    }
-  }
-}
-
-@media screen and (max-width: 688px) {
-  .section1 {
-    .container {
-    }
-    &-container {
-    }
-    &-title {
-      h2 {
-        font-size: 55px;
-      }
-    }
-  }
-}
-@media screen and (max-width: 626px) {
-  .section1 {
-    .container {
-    }
-    &-container {
-    }
-    &-title {
-      h2 {
-        font-size: 50px;
+        gap: 25px;
       }
     }
   }

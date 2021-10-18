@@ -1,8 +1,13 @@
+.header.active {
+  top: -100%;
+}
 .header {
   position: fixed;
   width: 100vw;
   z-index: 1000;
+  top: 0;
   background-color: white;
+  transition: top 0.5s ease;
   .container {
     width: 100%;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
@@ -22,15 +27,18 @@
       margin-right: 62px;
     }
     .menu {
+      height: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
       gap: 48px;
-      .menu-link {
+      &-link {
         color: grey;
         font-size: 14px;
-        font-weight: 500;
         font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+      }
+      &-link:hover {
+        color: $color-primary;
       }
     }
   }
@@ -45,8 +53,15 @@
       font-weight: 500;
       font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     }
+    a:hover,
+    i:hover {
+      color: $color-primary;
+    }
     i {
       cursor: pointer;
+    }
+    #sign-in {
+      border: none;
     }
   }
 }
@@ -113,69 +128,12 @@
   .header {
     .container {
       position: relative;
-      .bar {
-        position: absolute;
-        top: 2rem;
-        width: 100%;
-        &-input {
-          display: none;
-        }
-        &-label {
-          font-size: 2rem;
-          color: grey;
-          margin-left: 8rem;
-        }
-        &-menu {
-          padding-top: 1rem;
-          overflow: hidden;
-          ul {
-            background-color: lightblue;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 2rem;
-            padding: 1rem 0px;
-            visibility: hidden;
-            opacity: 0;
-            margin-top: -5rem;
-            transition: margin-top 0.5s linear, visibility 0.5s linear,
-              opacity 0.5s linear;
-            li {
-              a {
-                padding: 1rem 2rem;
-                color: white;
-                font-weight: 600;
-                position: relative;
-              }
-              a:hover::before {
-                opacity: 1;
-              }
-              a:before {
-                position: absolute;
-                content: "";
-                width: 100%;
-                height: 5px;
-                background-color: $color-primary;
-                bottom: 0;
-                left: 0;
-                opacity: 0;
-                transition: opacity 0.2s linear;
-              }
-            }
-          }
-        }
-        &-input:checked + .bar-menu ul {
-          visibility: visible;
-          opacity: 1;
-          margin-top: 0;
-        }
-      }
     }
     .menu {
       display: none;
     }
     &-container {
-      padding: 24px 50px 70px 50px;
+      padding: 10px 15px 10px 30px;
     }
     &-right {
       gap: 25px;
