@@ -1,5 +1,5 @@
 .section1 {
-  padding: 48px 0px;
+  padding: 10rem 0px 48px 0px;
   .container {
     margin: 0 auto;
   }
@@ -14,6 +14,7 @@
     line-height: 1;
     letter-spacing: -4px;
     max-width: 870px;
+    transform: translateX(-100%);
     span {
       color: $color-primary;
     }
@@ -30,6 +31,7 @@
       flex-direction: column;
       align-items: flex-start;
       gap: 48px;
+      transform: translateX(-100%);
       span {
         line-height: calc(25.6 / 16);
         letter-spacing: -1%;
@@ -40,6 +42,15 @@
         }
       }
     }
+    &-image {
+      transform: translateX(100%);
+      width: 100rem;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .center {
+    transform: translateX(0);
   }
 }
 @media screen and (max-width: 1023px) {

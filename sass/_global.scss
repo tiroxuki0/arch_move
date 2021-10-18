@@ -13,9 +13,11 @@ body {
   padding: 15px 24px;
   background-color: $color-primary;
   border-radius: 4px;
+  text-align: center;
   span {
     color: white;
     font-weight: 600;
+    text-transform: uppercase;
   }
 }
 @media screen and (max-width: 767px) {
