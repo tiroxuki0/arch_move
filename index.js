@@ -29,6 +29,22 @@ document.querySelector("#search-form").addEventListener("click", function (evt) 
   }
 })
 
+/* press ESC to close form search or close form sign in */
+
+window.addEventListener("keydown", function (evt) {
+  console.log(evt.keyCode)
+  if(evt.keyCode == 27){
+    document.querySelector("#search-form").classList.remove("active")
+    document.querySelector("#search-box").textContent = " "
+
+    document.querySelector(".form-wrapper").classList.remove("active")
+  document.querySelector(".form-toggle").classList.remove("visible")
+    document.querySelector(".form-panel.one").classList.remove("hidden")
+    document.querySelector(".form-panel.two").classList.remove("active")
+    document.querySelector(".form").style.height = panelOne + "px"
+  }
+})
+
 /* form search end */
 /* form signin start */
 
@@ -162,3 +178,4 @@ window.addEventListener("scroll",function () {
           } */
         }
 })
+
