@@ -1,4 +1,7 @@
 .section4 {
+  .center {
+    transform: translateX(0);
+  }
   padding: 65px 0px;
   .container {
     margin: 0 auto;
@@ -10,6 +13,7 @@
     gap: 40px;
   }
   &-title {
+    transform: translateX(-100%);
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -21,6 +25,7 @@
     }
   }
   &-content {
+    transform: translateX(100%);
     display: flex;
     justify-content: flex-end;
     align-items: center;

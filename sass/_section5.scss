@@ -1,4 +1,7 @@
 .section5 {
+  .center {
+    transform: translate(0);
+  }
   padding: 65px 0px;
   .container {
     height: 100%;
@@ -12,12 +15,14 @@
     gap: 120px;
   }
   &-image {
+    transform: translateX(-100%);
     img {
       width: 100%;
       object-fit: cover;
     }
   }
-  &-title {
+  &-content {
+    transform: translateX(100%);
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -50,7 +55,7 @@
         height: 25rem;
       }
     }
-    &-title {
+    &-content {
       h2 {
         font-size: 40px;
       }

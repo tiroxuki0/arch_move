@@ -50,64 +50,64 @@
         </form>
         <!-- sign in form -->
         <section class="form-wrapper" id="form-wrapper">
-            <div class="form" id="form">
+            <div class="form" id="form-inner">
                 <div class="form-toggle"></div>
                 <div class="form-panel one">
                     <div class="form-header">
                         <h1>Account Login</h1>
                     </div>
                     <div class="form-content">
-                <form>
-                    <div class="form-group">
-                        <label for="username">Username</label>
-                        <input type="text" id="username" name="username" required="required"/>
-                  </div>
-                  <div class="form-group">
-                      <label for="password">Password</label>
-                      <input type="password" id="password" name="password" required="required"/>
-                  </div>
-                  <div class="form-group">
-                      <label class="form-remember">
-                          <input type="checkbox"/>Remember Me
-                        </label><a class="form-recovery" href="#">Forgot Password?</a>
+                        <form>
+                            <div class="form-group">
+                                <label for="username">Username</label>
+                                <input type="text" id="username" name="username" required="required"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Password</label>
+                                <input type="password" id="password" name="password" required="required"/>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-remember">
+                                <input type="checkbox"/>Remember Me
+                                </label><a class="form-recovery" href="#">Forgot Password?</a>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit">Log In</button>
+                            </div>
+                        </form>
                     </div>
-                    <div class="form-group">
-                        <button type="submit">Log In</button>
+                </div>
+                <div class="form-panel two">
+                    <div class="form-header">
+                        <h1>Register Account</h1>
                     </div>
-                </form>
-              </div>
-            </div>
-            <div class="form-panel two">
-                <div class="form-header">
-                    <h1>Register Account</h1>
-                </div>
-                <div class="form-content">
-                    <form>
-                        <div class="form-group">
-                            <label for="username">Username</label>
-                            <input type="text" id="username" name="username" required="required"/>
-                        </div>
-                        <div class="form-group">
-                            <label for="password">Password</label>
-                            <input type="password" id="password" name="password" required="required"/>
-                        </div>
-                        <div class="form-group">
-                            <label for="cpassword">Confirm Password</label>
-                            <input type="password" id="cpassword" name="cpassword" required="required"/>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email Address</label>
-                            <input type="email" id="email" name="email" required="required"/>
-                        </div>
-                        <div class="form-group">
-                            <button type="submit">Register</button>
-                        </div>
-                    </form>
+                    <div class="form-content">
+                        <form>
+                            <div class="form-group">
+                                <label for="username">Username</label>
+                                <input type="text" id="username" name="username" required="required"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Password</label>
+                                <input type="password" id="password" name="password" required="required"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="cpassword">Confirm Password</label>
+                                <input type="password" id="cpassword" name="cpassword" required="required"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" required="required"/>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit">Register</button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
-        </div>
-        <i class="fas fa-times" id="close-signin"></i>
-    </section>
+            <i class="fas fa-times" id="close-signin"></i>
+        </section>
           <!-- end signin -->
         <section class="section1" id="s1">
             <div class="container">
@@ -131,10 +131,10 @@
         <section class="section2" id="s2">
             <div class="container">
                 <div class="section2-container">
-                    <div class="section2-title">
+                    <div class="section2-title" id="section2-title">
                         <h2>Build professional valuable room for you</h2>
                     </div>
-                    <div class="swiper section2-list">
+                    <div class="swiper section2-list" id="section2-content">
                         <ul class="swiper-wrapper menu">
                           <li class="swiper-slide menu-item">
                             <a href="#" class="menu-link">
@@ -182,13 +182,13 @@
                 </div>
             </div>
         </section>
-        <section class="section3" >
+        <section class="section3" id="s3">
             <div class="container">
                 <div class="section3-container">
-                    <div class="section3-title">
+                    <div class="section3-title" id="section3-title">
                         <h2>Build your needs with Archmove</h2>
                     </div>
-                    <div class="section3-content">
+                    <div class="section3-content" id="section3-content">
                         <div class="section3-image">
                             <img src="./imgs/section3-image.png" alt="">
                         </div>
@@ -228,13 +228,13 @@
                 </div>
             </div>
         </section>
-        <section class="section4">
+        <section class="section4" id="s4">
             <div class="container">
                 <div class="section4-container">
-                    <div class="section4-title">
+                    <div class="section4-title" id="section4-title">
                         <h2>Sound Too Good To Be True?</h2>
                     </div>
-                    <div class="section4-content">
+                    <div class="section4-content" id="section4-content">
                         <div class="right">
                             <img src="./imgs/“.png" alt="">
                             <div class="main-content">
@@ -248,13 +248,13 @@
                 </div>
             </div>
         </section>
-        <section class="section5">
+        <section class="section5" id="s5">
             <div class="container">
                 <div class="section5-container">
-                    <div class="section5-image">
+                    <div class="section5-image" id="section5-title">
                         <img src="./imgs/section5-image.png" alt="">
                     </div>
-                    <div class="section5-title">
+                    <div class="section5-content" id="section5-content">
                         <h2>Realize your dream project with <span>Archmove</span></h2>
                         <a href="" class="button">
                             <span>free consultation</span>

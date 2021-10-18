@@ -5,7 +5,6 @@ html {
 * {
   margin: 0;
   padding: 0;
-  transition: transform 1s ease;
 }
 
 *,
@@ -53,6 +52,10 @@ img {
   src: url("../fonts/FontsFree-Net-NewYorkExtraLargeMedium.ttf");
   font-weight: 900;
 }
+* {
+  transition: transform 1s ease;
+}
+
 body {
   font-size: 16px;
 }
@@ -155,7 +158,7 @@ body {
 
 #search-form {
   position: fixed;
-  top: -100%;
+  top: -110%;
   width: 100vw;
   height: 100vh;
   z-index: 10000;
@@ -294,14 +297,14 @@ html {
   z-index: 1000;
   opacity: 0;
   visibility: hidden;
-  transition: opacity 0.5s ease, visibility 0.5s ease;
+  /* transition: opacity 0.5s ease, visibility 0.5s ease; */
 }
 .form-wrapper #close-signin {
   position: absolute;
-  font-size: 2rem;
+  font-size: 3rem;
   color: grey;
-  top: 1rem;
-  right: 3rem;
+  top: 5px;
+  right: 2rem;
   cursor: pointer;
 }
 
@@ -322,7 +325,6 @@ html {
   left: 50%;
   transform: translateX(-50%);
   background: #ffffff;
-  width: 600px;
   border-radius: 4px;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
@@ -333,11 +335,11 @@ html {
 .form-toggle {
   z-index: 10;
   position: absolute;
-  top: 60px;
-  right: 60px;
+  top: 20px;
+  right: 10px;
   background: #ffffff;
-  width: 60px;
-  height: 60px;
+  width: 40px;
+  height: 40px;
   border-radius: 100%;
   transform-origin: center;
   transform: translate(0, -25%) scale(0);
@@ -520,6 +522,7 @@ html {
   z-index: 40;
   color: #ffffff;
 }
+
 .cp-fab {
   background: #ffffff !important;
   color: #fd665e !important;
@@ -604,6 +607,7 @@ html {
   }
 }
 .section2 {
+  transition: transform 1s ease;
   padding: 64px 0px;
 }
 .section2 .container {
@@ -675,6 +679,9 @@ html {
 .section3 {
   padding: 64px 0px;
 }
+.section3 .center {
+  transform: translateX(0);
+}
 .section3 .container {
   margin: 0 auto;
 }
@@ -683,6 +690,9 @@ html {
   flex-direction: column;
   align-items: flex-start;
   gap: 40px;
+}
+.section3-title {
+  transform: translateX(-100%);
 }
 .section3-title h2 {
   text-align: start;
@@ -698,12 +708,16 @@ html {
   align-items: center;
   gap: 50px;
 }
+.section3-image {
+  transform: translateX(-100%);
+}
 .section3-image img {
   width: 30rem;
   height: 30rem;
   object-fit: cover;
 }
 .section3-list {
+  transform: translateX(100%);
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -780,6 +794,9 @@ html {
 .section4 {
   padding: 65px 0px;
 }
+.section4 .center {
+  transform: translateX(0);
+}
 .section4 .container {
   margin: 0 auto;
   overflow: visible;
@@ -790,6 +807,7 @@ html {
   gap: 40px;
 }
 .section4-title {
+  transform: translateX(-100%);
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -801,6 +819,7 @@ html {
   letter-spacing: -4px;
 }
 .section4-content {
+  transform: translateX(100%);
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -831,6 +850,9 @@ html {
 .section5 {
   padding: 65px 0px;
 }
+.section5 .center {
+  transform: translate(0);
+}
 .section5 .container {
   height: 100%;
   margin: 0 auto;
@@ -842,25 +864,29 @@ html {
   align-items: center;
   gap: 120px;
 }
+.section5-image {
+  transform: translateX(-100%);
+}
 .section5-image img {
   width: 100%;
   object-fit: cover;
 }
-.section5-title {
+.section5-content {
+  transform: translateX(100%);
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 64px;
 }
-.section5-title h2 {
+.section5-content h2 {
   font-size: 48px;
   line-height: 1.25;
   letter-spacing: -4px;
 }
-.section5-title h2 span {
+.section5-content h2 span {
   color: #fd665e;
 }
-.section5-title .button span {
+.section5-content .button span {
   text-transform: uppercase;
 }
 
@@ -874,10 +900,10 @@ html {
   .section5-image img {
     height: 25rem;
   }
-  .section5-title {
+  .section5-content {
     gap: 15px;
   }
-  .section5-title h2 {
+  .section5-content h2 {
     font-size: 40px;
   }
 }

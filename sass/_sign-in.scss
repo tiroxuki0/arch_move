@@ -20,13 +20,13 @@ html {
   z-index: 1000;
   opacity: 0;
   visibility: hidden;
-  transition: opacity 0.5s ease, visibility 0.5s ease;
+  /* transition: opacity 0.5s ease, visibility 0.5s ease; */
   #close-signin {
     position: absolute;
-    font-size: 2rem;
+    font-size: 3rem;
     color: grey;
-    top: 1rem;
-    right: 3rem;
+    top: 5px;
+    right: 2rem;
     cursor: pointer;
   }
 }
@@ -42,11 +42,11 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   position: absolute;
+  z-index: 1000000;
   top: -10%;
   left: 50%;
   transform: translateX(-50%);
   background: $white;
-  width: $max-width;
   border-radius: 4px;
   box-shadow: 0 0 30px rgba($black, 0.1);
   box-sizing: border-box;
@@ -57,11 +57,11 @@ html {
   &-toggle {
     z-index: 10;
     position: absolute;
-    top: 60px;
-    right: 60px;
+    top: 20px;
+    right: 10px;
     background: $white;
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
     border-radius: 100%;
     transform-origin: center;
     transform: translate(0, -25%) scale(0);
@@ -287,13 +287,6 @@ html {
         color: $white;
       }
     }
-  }
-
-  // Content
-  &-content {
-  }
-
-  &-footer {
   }
 }
 
