@@ -683,7 +683,7 @@ html {
 }
 .section2 {
   transition: transform 1s ease;
-  padding: 64px 0px;
+  padding: 64px 0px 24px 0px;
 }
 .section2 .container {
   margin: 0 auto;
@@ -707,6 +707,9 @@ html {
   line-height: 1.25;
   letter-spacing: -4px;
 }
+.section2 .swiper {
+  padding: 0px 0px 40px 0px;
+}
 .section2-list {
   transform: translateX(200%);
   width: 100%;
@@ -720,12 +723,18 @@ html {
   height: 30rem;
   width: 100rem;
   object-fit: cover;
+  box-shadow: #afafb4 -4px 4px 3px 0px;
 }
 .section2-list .pagi span {
   background-color: #fd665e;
   width: 15px;
   height: 15px;
   border-radius: 100rem;
+}
+.section2-list .swiper-button-next,
+.section2-list .swiper-button-prev {
+  transform: translateY(-50%);
+  color: #fd665e;
 }
 .section2 .center {
   transform: translateX(0) rotate(0);
