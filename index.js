@@ -178,9 +178,11 @@ window.addEventListener("scroll",function () {
          document.querySelector("#section5-content").classList.add("center");
         }
 })
+
 /* loader */
 function loader() {
   document.querySelector(".loader-container").classList.add("end-load")
+  document.querySelector("body").style.overflow = "scroll";
 }
 function end_load() {
   setTimeout(loader, 4000)
