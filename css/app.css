@@ -80,6 +80,9 @@ body {
   background-color: #fd665e;
   border-radius: 4px;
   text-align: center;
+  border: none;
+  position: relative;
+  overflow: hidden;
 }
 .button span {
   color: white;
@@ -87,6 +90,26 @@ body {
   text-transform: uppercase;
 }
 
+.button::before {
+  content: "";
+  position: absolute;
+  width: 3rem;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(250, 250, 250, 0.144);
+  transform: skew(-45deg) translateX(-220%);
+}
+
+.button:hover:before {
+  animation: buttonEffect 2s ease;
+}
+
+@keyframes buttonEffect {
+  to {
+    transform: skew(-45deg) translateX(850%);
+  }
+}
 @media screen and (max-width: 1023px) {
   .container {
     width: calc(100% - 50px);
@@ -166,24 +189,8 @@ body {
 .header-right i:hover {
   transform: rotate(360deg);
 }
-.header-right #sign-in {
-  border: none;
-  position: relative;
-  overflow: hidden;
-}
-.header-right #sign-in::before {
-  content: "";
-  position: absolute;
-  width: 2rem;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background-color: rgba(250, 250, 250, 0.2);
-  transform: skew(-45deg) translateX(-220%);
-  transition: all 1.2s ease;
-}
-.header-right #sign-in:hover:before {
-  transform: skew(-45deg) translateX(750%);
+.header-right .button:hover:before {
+  animation: buttonEffect 3s ease;
 }
 .header-right #bar {
   display: none;

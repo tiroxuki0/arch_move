@@ -64,24 +64,8 @@
     i:hover {
       transform: rotate(360deg);
     }
-    #sign-in {
-      border: none;
-      position: relative;
-      overflow: hidden;
-    }
-    #sign-in::before {
-      content: "";
-      position: absolute;
-      width: 2rem;
-      height: 100%;
-      top: 0;
-      left: 0;
-      background-color: rgba(250, 250, 250, 0.2);
-      transform: skew(-45deg) translateX(-220%);
-      transition: all 1.2s ease;
-    }
-    #sign-in:hover:before {
-      transform: skew(-45deg) translateX(750%);
+    .button:hover:before {
+      animation: buttonEffect 3s ease;
     }
     #bar {
       display: none;
