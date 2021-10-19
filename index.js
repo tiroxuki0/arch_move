@@ -178,4 +178,13 @@ window.addEventListener("scroll",function () {
          document.querySelector("#section5-content").classList.add("center");
         }
 })
-
+/* loader */
+function loader() {
+  document.querySelector(".loader-container").classList.add("end-load")
+}
+function end_load() {
+  setTimeout(loader, 4000)
+}
+window.onload = () =>{
+  end_load()
+}

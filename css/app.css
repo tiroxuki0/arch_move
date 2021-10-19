@@ -105,6 +105,25 @@ body {
   animation: buttonEffect 2s ease;
 }
 
+.loader-container {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100000;
+  background-color: #fd665e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader-container.end-load {
+  top: 110%;
+  opacity: 0;
+}
+
 @keyframes buttonEffect {
   to {
     transform: skew(-45deg) translateX(850%);
