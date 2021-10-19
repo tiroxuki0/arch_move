@@ -1,13 +1,19 @@
 
-console.log(window.scrollHeight)
 /* header visible/hidden */
 window.onscroll = () =>{
-  if(window.scrollY > 100){
+  if(window.scrollY > 50){
     document.querySelector(".header").classList.add("active")
   }else{
     document.querySelector(".header").classList.remove("active")
   }
+  document.querySelector(".header .container .menu").classList.remove("active")
 }
+
+/* navbar */
+document.querySelector("#bar").addEventListener("click", function () {
+  document.querySelector("#bar").classList.toggle("fa-times")
+  document.querySelector(".header .container .menu").classList.toggle("active")
+})
 
 /* form search */
 let searchButton = document.querySelector("#header-search")
@@ -131,11 +137,12 @@ var swiper = new Swiper(".section2-list", {
       clickable: true,
     },
   });
-  
-let offsetSec2 = sections[0].offsetTop + 600
-let offsetSec3 = sections[1].offsetTop + 1500
-let offsetSec4 = sections[2].offsetTop + 1100
-let offsetSec5 = sections[3].offsetTop + 1150
+
+/* show elements follow window scroll */
+let offsetSec2 = sections[2].offsetTop - 250
+let offsetSec3 = sections[3].offsetTop - 250
+let offsetSec4 = sections[4].offsetTop - 400
+let offsetSec5 = sections[5].offsetTop - 300
 
 
 window.addEventListener("scroll",function () {
@@ -144,38 +151,22 @@ window.addEventListener("scroll",function () {
     if( top > offsetSec2 ){
         document.querySelector("#section2-title").classList.add("center");
         document.querySelector("#section2-content").classList.add("center");
-        /* if( top < offsetSec2 - 200 ){
-          document.querySelector("#section2-title").classList.remove("center");
-          document.querySelector("#section2-content").classList.remove("center");
-        } */
       }
     /* sec3 */
     if( top > offsetSec3 ){
         document.querySelector("#section3-title").classList.add("center");
         document.querySelector("#section3-content .section3-image").classList.add("center");
         document.querySelector("#section3-content .section3-list").classList.add("center");
-        /* if( top < offsetSec3 - 200 ){
-          document.querySelector("#section3-title").classList.remove("center");
-          document.querySelector("#section3-content").classList.remove("center");
-        } */
       }
     /* sec4 */
     if( top > offsetSec4 ){
         document.querySelector("#section4-title").classList.add("center");
          document.querySelector("#section4-content").classList.add("center");
-         /* if( top < offsetSec4 - 200 ){
-           document.querySelector("#section5-title").classList.remove("center");
-           document.querySelector("#section5-content").classList.remove("center");
-          } */
         }
     /* sec5 */
     if( top > offsetSec5 ){
         document.querySelector("#section5-title").classList.add("center");
          document.querySelector("#section5-content").classList.add("center");
-         /* if( top < offsetSec5 - 200 ){
-           document.querySelector("#section2-title").classList.remove("center");
-           document.querySelector("#section2-content").classList.remove("center");
-          } */
         }
 })
 

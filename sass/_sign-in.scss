@@ -23,10 +23,10 @@ html {
   /* transition: opacity 0.5s ease, visibility 0.5s ease; */
   #close-signin {
     position: absolute;
-    font-size: 3rem;
+    font-size: 2rem;
     color: grey;
     top: 5px;
-    right: 2rem;
+    right: 1rem;
     cursor: pointer;
   }
 }
@@ -43,14 +43,13 @@ html {
   -moz-osx-font-smoothing: grayscale;
   position: absolute;
   z-index: 1000000;
-  top: -10%;
+  top: 1%;
   left: 50%;
   transform: translateX(-50%);
   background: $white;
   border-radius: 4px;
   box-shadow: 0 0 30px rgba($black, 0.1);
   box-sizing: border-box;
-  margin: 100px auto 10px;
   overflow: hidden;
   transition: height 0.5s ease;
   // Toggle
@@ -293,4 +292,51 @@ html {
 .cp-fab {
   background: $white !important;
   color: $accent !important;
+}
+
+@media screen and (max-width: 679px) {
+  .form-wrapper {
+    .form {
+      /*  width: 70%; */
+      .form-panel.one {
+        padding: 30px calc(5% + 30px) 30px 30px;
+      }
+      .form-panel.two {
+        padding: 30px calc(10% + 30px) 30px 30px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 552px) {
+  .form-wrapper {
+    .form {
+      width: 75%;
+      .form-panel.one {
+        padding: 60px calc(5% + 60px) 60px 60px;
+      }
+      .form-panel.two {
+        padding: 60px calc(10% + 60px) 60px 60px;
+      }
+    }
+    #close-signin {
+      top: 0px;
+      right: 0px;
+    }
+  }
+}
+@media screen and (max-width: 452px) {
+  .form-wrapper {
+    .form {
+      .form-panel.one {
+        padding: 30px calc(5% + 30px) 30px 30px;
+      }
+      .form-panel.two {
+        padding: 30px calc(10% + 30px) 30px 30px;
+      }
+    }
+    #close-signin {
+      top: 0px;
+      right: 0px;
+    }
+  }
 }

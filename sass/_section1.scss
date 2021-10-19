@@ -14,7 +14,7 @@
       font-size: 120px;
       line-height: 1;
       letter-spacing: -4px;
-      transform: translateX(-100%);
+      transform: translateX(-200%);
     }
     span {
       color: $color-primary;
@@ -33,7 +33,7 @@
       flex-direction: column;
       align-items: flex-start;
       gap: 48px;
-      transform: translateX(-100%);
+      transform: translateX(-200%);
       span {
         line-height: calc(25.6 / 16);
         letter-spacing: -1%;
@@ -45,8 +45,7 @@
       }
     }
     &-image {
-      transform: translateX(100%);
-      width: 100rem;
+      transform: translateX(200%);
       height: 100%;
       object-fit: cover;
     }
@@ -55,7 +54,8 @@
     transform: translateX(0);
   }
 }
-@media screen and (max-width: 1029px) {
+
+@media screen and (max-width: 1023px) {
   .section1 {
     &-title {
       h2 {

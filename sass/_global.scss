@@ -29,3 +29,8 @@ body {
     width: calc(100% - 50px);
   }
 }
+@media screen and (min-width: 1280px) {
+  .container {
+    width: calc(100% - 200px);
+  }
+}

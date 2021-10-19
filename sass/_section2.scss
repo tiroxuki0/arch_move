@@ -12,7 +12,7 @@
     gap: 2rem;
   }
   &-title {
-    transform: translateY(-190%) rotate(45deg);
+    transform: translateY(-290%) rotate(45deg);
     width: 100%;
     h2 {
       text-align: start;
@@ -24,7 +24,7 @@
     }
   }
   &-list {
-    transform: translateX(100%);
+    transform: translateX(200%);
     width: 100%;
     .menu {
       &-item {
@@ -40,12 +40,23 @@
         }
       }
     }
+    .pagi {
+      span {
+        background-color: $color-primary;
+        width: 15px;
+        height: 15px;
+        border-radius: 100rem;
+      }
+    }
   }
   .center {
     transform: translateX(0) rotate(0);
   }
 }
 @media screen and (max-width: 1023px) {
+  .section2 {
+    padding: 0px 0px 48px 0px;
+  }
 }
 
 @media screen and (max-width: 905px) {
