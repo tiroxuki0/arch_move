@@ -120,10 +120,10 @@
   .fa-times:hover {
     color: white;
   }
-  .fa-times {
+  #close {
     position: absolute;
     top: 1rem;
-    right: 1rem;
+    right: 2rem;
     font-size: 2rem;
     color: grey;
     transition: all 0.3s ease;
@@ -175,7 +175,7 @@
         align-items: center;
       }
       &-link {
-        background-color: rgb(223, 223, 223);
+        background-color: #cdcdcd;
         display: inline-block;
         width: 100%;
         padding: 20px;

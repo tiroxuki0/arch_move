@@ -38,7 +38,6 @@ document.querySelector("#search-form").addEventListener("click", function (evt) 
 /* press ESC to close form search or close form sign in */
 
 window.addEventListener("keydown", function (evt) {
-  console.log(evt.keyCode)
   if(evt.keyCode == 27){
     document.querySelector("#search-form").classList.remove("active")
     document.querySelector("#search-box").textContent = " "
