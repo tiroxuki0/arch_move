@@ -128,9 +128,11 @@ let sections = document.querySelectorAll("section")
 
 /* section2-slider */
 var swiper = new Swiper(".section2-list", {
-    slidesPerView: 4,
+    slidesPerView: 3,
     spaceBetween: 25,
     centeredSlides: true,
+    loop: true,
+    loopFillGroupWithBlank: true,
     autoplay: {
       delay: 2500,
       disableOnInteraction: false,
