@@ -51,6 +51,7 @@ window.addEventListener("keydown", function (evt) {
 })
 
 /* form search end */
+
 /* form signin start */
 
 /* form signin active */
@@ -129,7 +130,7 @@ let sections = document.querySelectorAll("section")
 /* section2-slider */
 var swiper = new Swiper(".section2-list", {
     slidesPerView: 3,
-    spaceBetween: 25,
+    spaceBetween: 10,
     centeredSlides: true,
     loop: true,
     loopFillGroupWithBlank: true,
@@ -185,7 +186,7 @@ function loader() {
   document.querySelector("body").style.overflow = "scroll";
 }
 function end_load() {
-  setTimeout(loader, 4000)
+  setTimeout(loader, 3000)
 }
 window.onload = () =>{
   end_load()

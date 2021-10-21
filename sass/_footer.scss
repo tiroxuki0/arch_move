@@ -10,7 +10,6 @@
     align-items: center;
     .menu {
       display: flex;
-      justify-content: space-between;
       align-items: center;
       gap: 50px;
       &-link {
@@ -25,7 +24,7 @@
     &-container {
       gap: 25px;
       .menu {
-        gap: 0px 15px;
+        gap: 10px 15px;
         flex-wrap: wrap;
       }
     }

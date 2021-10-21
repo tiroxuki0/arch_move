@@ -194,3 +194,11 @@
     }
   }
 }
+@media screen and (max-width: 375px) {
+  #search-form {
+    #close {
+      top: 0;
+      right: 5px;
+    }
+  }
+}
