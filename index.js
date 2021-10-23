@@ -2,11 +2,8 @@
 /* header visible/hidden */
 window.onscroll = () =>{
   if(window.scrollY > 50){
-    document.querySelector(".header").classList.add("active")
-  }else{
-    document.querySelector(".header").classList.remove("active")
+    document.querySelector(".header .container .menu").classList.remove("active")
   }
-  document.querySelector(".header .container .menu").classList.remove("active")
 }
 
 /* navbar */
@@ -32,6 +29,7 @@ document.querySelector("#search-form").addEventListener("click", function (evt) 
   targetElement = evt.target
   if(targetElement == outsideSearch){
     document.querySelector("#search-form").classList.remove("active")
+    document.querySelector("#search-box").value = null
   }
 })
 
@@ -40,7 +38,7 @@ document.querySelector("#search-form").addEventListener("click", function (evt) 
 window.addEventListener("keydown", function (evt) {
   if(evt.keyCode == 27){
     document.querySelector("#search-form").classList.remove("active")
-    document.querySelector("#search-box").textContent = " "
+    document.querySelector("#search-box").value = null
 
     document.querySelector(".form-wrapper").classList.remove("active")
   document.querySelector(".form-toggle").classList.remove("visible")
@@ -186,7 +184,7 @@ function loader() {
   document.querySelector("body").style.overflow = "scroll";
 }
 function end_load() {
-  setTimeout(loader, 3000)
+  setTimeout(loader, 1000)
 }
 window.onload = () =>{
   end_load()
