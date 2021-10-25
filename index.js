@@ -184,7 +184,7 @@ function loader() {
   document.querySelector("body").style.overflow = "scroll";
 }
 function end_load() {
-  setTimeout(loader, 1000)
+  setTimeout(loader, 500)
 }
 window.onload = () =>{
   end_load()
